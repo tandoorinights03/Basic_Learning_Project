@@ -2,13 +2,13 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SimpleBankingSystem {
-    // Instantiate objects and perform necessary setup
+    // Steps
     private static AccountService accountService = new AccountService();
     private static Account currentAccount;
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // Initial menu
+        // menu
         while (true) {
             System.out.println("================================");
             System.out.println("Welcome to Easy Finance Bank!");
