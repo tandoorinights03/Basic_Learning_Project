@@ -14,9 +14,7 @@ public class Account {
         this.accountNumber = generateAccountNumber();
     }
 
-    /**
-     * Setters and Getters methods
-     */
+
     public String getName() {
         return name;
     }
@@ -44,7 +42,7 @@ public class Account {
 
         // Generate a 6-digit random number
         Random random = new Random();
-        int randomNumber = random.nextInt(9000) + 1000; // Generates a random number between 1000 and 9999
+        int randomNumber = random.nextInt(9000) + 1000; 
 
         // Construct and return the account number
         return "EFB" + initial + String.format("%04d", randomNumber);

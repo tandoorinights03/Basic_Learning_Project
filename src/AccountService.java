@@ -16,7 +16,7 @@ public class AccountService {
         return newAccount;
     }
 
-    // Method to display all details of the account
+    
     public void showAccountInfo(Account account) {
         System.out.println("================================");
         System.out.println("=\tAccount Number: " + account.getAccountNumber());
@@ -65,7 +65,7 @@ public class AccountService {
         System.out.println("Transfer successful. Updated balance: $" + senderAccount.getBalance());
     }
 
-    // Method to get the account using account holder's name
+   
     public Account findAccountByName(String name) {
         for (Account account : accounts) {
             if (account.getName().equals(name)) {
